@@ -12,23 +12,50 @@ use_cuda = torch.cuda.is_available()
 ###################################### hyperparameters
 class HParams():
     def __init__(self):
-        self.data_location = 'cat.npz'
-        self.enc_hidden_size = 256
-        self.dec_hidden_size = 512
-        self.Nz = 128
-        self.M = 20
+        self.data_location = 'cat.npz' #location of images, numpy array image
+
+        self.enc_hidden_size = 256 # single encoder, size 256
+
+        self.dec_hidden_size = 512 # single decoder, size 512 <
+
+        self.Nz = 128 # size of latent vector z
+
+        self.M = 20 # no. of mixtures in the gaussian distribution
+
+        """
+        - regularization method where input and recurrent connections to LSTM units
+        are probabilistically excluded from activation, effect of reducing overfitting
+        - effect of reducing overfitting + improving model performance
+        - a layer of the RNN
+        """
         self.dropout = 0.9
+
+        # Trains in batches of 100
         self.batch_size = 100
+
+        #
         self.eta_min = 0.01
+
+        # KL Decay rate, per minibatch
         self.R = 0.99995
-        self.KL_min = 0.2
-        self.wKL = 0.5
-        self.lr = 0.001
-        self.lr_decay = 0.9999
-        self.min_lr = 0.00001
-        self.grad_clip = 1.
-        self.temperature = 0.4
-        self.max_seq_length = 200
+
+        self.KL_min = 0.2 # KL tolerance, level of KL loss at which to stop optimizing for KL
+
+        self.wKL = 0.5 # KL weight of loss equation, recommend 0.5 or 1.0
+
+        self.lr = 0.001 # learning rate
+
+        self.lr_decay = 0.9999 # learning rate decay per minibatch
+
+        self.min_lr = 0.00001 # minimum learning rate
+
+        self.grad_clip = 1. # gradient climping, recommended to leave at 1
+
+        self.temperature = 0.4 # hyperparameter of a LSTM, control randomness of predictions by scaling the logits before applying softmax
+
+        self.max_seq_length = 200 
+
+        # use recurrent dropout + data augmentation to train models on small datasets to avoid overfitting
 
 hp = HParams()
 
