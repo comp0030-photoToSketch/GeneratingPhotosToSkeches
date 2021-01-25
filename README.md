@@ -1,38 +1,38 @@
-Sketch to sketch implementation
+Incomplete - 19:21 25/1/21
 
-- Install pytorch from requirements .txt (not sure if we need any other packages yet) 
+# Sketch to sketch implementation
 
-pip install -r requirements.txt
+## Install pytorch from requirements .txt (not sure if we need any other packages yet) 
 
-- If you have problems check out this thread
+- pip install -r requirements.txt
 
-https://stackoverflow.com/questions/60912744/install-pytorch-from-requirements-txt
+## If you have problems check out this thread
+
+- https://stackoverflow.com/questions/60912744/install-pytorch-from-requirements-txt
 
 
-Goal
+#Goal
 
-Encoder[Sketch] -> Learned features vector -> Sketch-RNN Decoder[Sketch] -> reproduced sketch
+##Encoder[Sketch] -> Learned features vector -> Sketch-RNN Decoder[Sketch] -> reproduced sketch
 
 1. Find dataset for encoder
 2. Experiment on different pytorch encoders
 3. Find a way to pass to decoder
 4. Check produced sketches look like what's expected
 
-Dataset
+# Dataset
 
-- datasets/quickdraw/train - 80 images
-- datasets/quickdraw/test - 10 images
-- datasets/quickdraw/val - 10 images
+- datasets/quickdraw/train - 50 images
+- datasets/quickdraw/test - 25 images
+- datasets/quickdraw/val - 23 images
 
-( can change but keep train and test separate!)
+# Encoder Architectures:
 
-Encoder Architectures:
+1. Muna:
+2. Jingze:
+3, Lischen:
+4, Duncheng:
 
-Muna -
-Jingze - 
-Lischen -
-Duncheng -
+# Decoder Architecture:
 
-Decoder Architecture:
-
-- SketchRNN, takes input in stroke-5 format, need to convert this to stroke-5
+## SketchRNN, takes input in stroke-5 format, need to convert this to stroke-5
