@@ -31,7 +31,7 @@ Encoder[Sketch] -> Learned features vector -> Sketch-RNN Decoder[Sketch] -> repr
 1. Muna:
 2. Jingze:
 3, Lischen:
-4, Duncheng:
+4, Duncheng: Here is a test
 
 # Decoder Architecture:
 
