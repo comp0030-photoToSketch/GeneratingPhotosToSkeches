@@ -11,7 +11,7 @@ If you have problems check out this thread
 - https://stackoverflow.com/questions/60912744/install-pytorch-from-requirements-txt
 
 
-#Goal
+# Goal
 
 Encoder[Sketch] -> Learned features vector -> Sketch-RNN Decoder[Sketch] -> reproduced sketch
 
@@ -30,8 +30,8 @@ Encoder[Sketch] -> Learned features vector -> Sketch-RNN Decoder[Sketch] -> repr
 
 1. Muna:
 2. Jingze:
-3, Lischen:
-4, Duncheng: Here is a test
+3. Lischen:
+4. Duncheng: Here is a test
 
 # Decoder Architecture:
 
