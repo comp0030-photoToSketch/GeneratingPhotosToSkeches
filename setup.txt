@@ -1,0 +1,8 @@
+Setup instructions:
+
+Had to install:
+- pytorch and open cv
+- had to add ipykernel so that it runs conda env on jupyter notebook
+
+conda activate env_pytorch
+jupyter notebook
