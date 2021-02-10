@@ -1,6 +1,9 @@
 import numpy as np
 
-data = np.load('../sketchrnn_chair.npz', encoding='latin1', allow_pickle=True)
-print(np.shape(data))
-print(data['valid'])
-print(np.shape(data['valid']))
+
+class Encoder:
+    def __init__(self, seq):
+        self.seq = seq
+
+    def encode(self):
+        return
