@@ -1,0 +1,9 @@
+1. Create virtual environment
+
+conda create --name env_pytorch
+
+2. Install all packages needed, including numpy 1.16.1
+
+conda install -n env_pytorch numpy-1.16.1
+
+
