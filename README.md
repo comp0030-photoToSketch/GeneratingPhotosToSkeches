@@ -1,6 +1,6 @@
 # Repository for COMP0031 Group Research Project
 
-## Generating Photos to Sketchs
+## Generating Sketches from Photos
 
 ### Abstract
 
