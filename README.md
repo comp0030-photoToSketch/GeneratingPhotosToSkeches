@@ -8,6 +8,20 @@
  
 ### Important Files + Descriptions:
 
+- photoToSketch_cat_sketchy_dataset.ipynb: Contains trained photo to sketch model on sketchy dataset cats
+
+- photoToSketch_chair_sketchy_dataset.ipynb: Contains trained photo to sketch model on sketchy dataset chairs
+
+- sketchToSketch_ImageEncoder_cat.ipynb: Contains code for supervised CNN Image Encoder.
+
+- sketchToSketch_chair.ipynb: Contains code for supervised CNN Image Encoder, with file paths for chair dataset.
+
+- sketchrnn_cat_interpolation.ipynb: Contains sketchRNN model and examples from Ha&Eck paper.
+
+- sketchrnn_chair_trained.ipynb: Contains sketchRNN model trained on chairs
+
+- sketchrnn_reimplementation.ipynb : Attempted sketchRNN implementation from scratch.
+
 ### Setup
 
 1. create a virtual environment, see 'setup_ve' file for instructions
