@@ -6,4 +6,4 @@ conda create --name env_pytorch
 
 conda install -n env_pytorch numpy-1.16.1
 
-
+* install other packages needed by replacing "numpy-1.16.1" e.g. matplotlib
